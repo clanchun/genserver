@@ -1,0 +1,1 @@
+A minimal generic server that implements [Erlang's  gen_server](http://erlang.org/doc/design_principles/gen_server_concepts.html) behaviour.

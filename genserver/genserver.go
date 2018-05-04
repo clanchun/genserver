@@ -8,11 +8,11 @@ type Server struct {
 	callback GenServer
 }
 
-// GenReq combines call and cast requests
+// GenReq combines call, cast and shutdown requests
 type GenReq struct {
 	msg
 	ch chan Reply
-	t  int // call or cast
+	t  int // call, cast or shutdown
 }
 
 // request msg

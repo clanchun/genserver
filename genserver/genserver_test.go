@@ -45,17 +45,17 @@ func TestMain(t *testing.T) {
 	fmt.Println("counter server started.")
 
 	n := s.Call("get")
-	fmt.Println("counter is: ", s.state)
+	fmt.Println("counter is: ", n)
 	if n != 0 {
-		t.Error("init test failed")
+		t.Error("call 0 test failed")
 	}
 
 	s.Cast("incr")
 
 	n = s.Call("get")
-	fmt.Println("counter is: ", s.state)
+	fmt.Println("counter is: ", n)
 	if n != 1 {
-		t.Error("call test failed")
+		t.Error("call 1 test failed")
 	}
 
 	s.Stop()

@@ -1,6 +1,6 @@
 package genserver
 
-// GenServer any server needs to implement this interface
+// GenServer any specific server needs to implement this interface
 type GenServer interface {
 	Init() State
 	HandleCall(GenReq, *State) Reply
